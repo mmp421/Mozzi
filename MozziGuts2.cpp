@@ -79,7 +79,7 @@ carrier freq noise can be an issue
 
 #if IS_ESP8266() && (ESP_AUDIO_OUT_MODE != PDM_VIA_SERIAL)
 #include <i2s.h>
-uint16_t output_buffer_size = 0;
+uint16_t_buffer_size = 0;
 uint64_t samples_written_to_buffer = 0;
 #else
 #if IS_ESP8266() && (ESP_AUDIO_OUT_MODE == PDM_VIA_SERIAL)
@@ -600,7 +600,7 @@ static void startAudioStandard() {
 static void startAudioStandard() {
   backupPreMozziTimer1();
 
-  pinMode(AUDIO_CHANNEL_1_PIN, OUTPUT); // set pin to output for audio
+  pinMode(8, OUTPUT); // set pin to output for audio
   //	pinMode(AUDIO_CHANNEL_2_PIN, OUTPUT);	// set pin to output for audio
 #if (AUDIO_MODE == STANDARD)
   Timer1.initializeCPUCycles(
